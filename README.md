@@ -1,2 +1,0 @@
-# projeto2lbn
-backup

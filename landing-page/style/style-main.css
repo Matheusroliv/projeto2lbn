@@ -12,6 +12,66 @@ html {
 
 }
 
+img::selection {
+
+    background: transparent;
+
+}
+
+div::selection {
+
+    background: transparent;
+
+}
+
+nav::selection {
+
+    background: transparent;
+
+}
+
+a::selection {
+
+    color: #fff;
+    background: #592411;
+
+}
+
+span::selection {
+
+    color: #fff;
+    background: #592411;
+
+}
+
+h1::selection {
+
+    color: #fff;
+    background: #592411;
+
+}
+
+input::selection {
+
+    color: #fff;
+    background: #592411;
+
+}
+
+p::selection {
+
+    color: #fff;
+    background: #592411;
+
+}
+
+button::selection {
+
+    color: #fff;
+    background: #592411;
+
+}
+
 ::-webkit-scrollbar {
 
     width: 0px;
@@ -50,8 +110,7 @@ header>a>img {
 
     height: 85px;
     width: 85px;
-    
-    
+       
 }
 
 header img:hover {
@@ -145,11 +204,17 @@ header img:hover {
 
 }
 
+input[type=text] {
+
+    color: #592411;
+    
+}
+
 nav>a>img {
 
     height: 30px;
     width: 30px;
-    
+
 }
 
 nav>a {
@@ -187,7 +252,7 @@ main {
     background-color: #592411;
      
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 20px;
     padding-top: 3%;
@@ -204,7 +269,7 @@ main {
     
 }
 
-.lista-main{
+.lista-main {
 
     display: flex;
     flex-direction: column;
@@ -224,10 +289,11 @@ main {
 
 }
 
-.lista-main a, p{
+.lista-main a, p {
 
     width: fit-content;
     text-decoration: none;
+
 }
 
 #cardápio p {
@@ -235,11 +301,11 @@ main {
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #C4C4C4;
+    color: white;
     
 }
 
-#container-promocao>div{
+#container-promocao>div {
 
     display: flex;
     justify-content: center;
@@ -293,7 +359,7 @@ main {
     
 }
 
-#menu-restaurantes button{
+#menu-restaurantes button {
 
     background-color: #592411;
     border: none;
@@ -314,7 +380,7 @@ main {
 
 }
 
-#menu-restaurantes button>img:last-of-type{
+#menu-restaurantes button>img:last-of-type {
 
     height: 15px;
     width: 15px;
@@ -322,7 +388,7 @@ main {
 
 }
 
-#menu-restaurantes span:last-of-type{
+#menu-restaurantes span:last-of-type {
 
    padding-right: 5px;
 
@@ -333,8 +399,6 @@ main {
     opacity: 1
 
 }
-
-
 
 #seleção-restaurantes {
 
@@ -358,6 +422,7 @@ main {
     border-right: 1px solid #C4C4C4;
     border-bottom: 1px solid #C4C4C4;
     font-weight: bold;
+    cursor: pointer;
     padding: 2% 5%;
     width: 75%;
     margin-top: 5%;
@@ -367,12 +432,12 @@ main {
 
 .restaurante-card:hover {
 
-   box-shadow: 2px 2px 8px black;
+   box-shadow: 2px 2px 8px #592411;
    transition: 0.5s;
 
 }
 
-.restaurante-card img{
+.restaurante-card img {
 
     border-radius: 50%;
 }
@@ -385,7 +450,7 @@ main {
     
 }
 
-#botao-seleção button{
+#botao-seleção button {
 
     padding: 16px 16px;
     width: 65%;
@@ -400,12 +465,222 @@ main {
 
 }
 
-#botao-seleção button:hover{
+#botao-seleção button:hover {
 
     background-color: #592411;
     color: white;
     transition: 0.3s;
     
+}
+
+#container-cidades {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+
+}
+
+#explore-cidades {
+
+    border-top: 1px solid #C4C4C4;
+    margin-top: 3%;
+    padding-top: 4%;
+    font-weight: bold;
+    font-size: 18px;
+    width: 85%;
+    margin-left: 2%;
+
+}
+
+.tabela-cidades {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 35px;
+    margin-top: 3%;
+
+}
+
+.tabela-cidades a {
+ 
+    text-decoration: none;
+    color: #c3bdbd;
+    font-weight: bold;
+    width: fit-content;
+    transition: 0.5s;
+    margin-left: 34.4%;
+
+}
+
+.tabela-cidades a:hover {
+
+    color: #592411;
+    transition: 0.5s;
+
+}
+
+.brasilia {
+
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+}
+
+.campinas {
+
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+}
+
+.curitiba {
+
+    grid-row-start: 4;
+    grid-column-start: 1;
+
+}
+
+.goiania {
+
+    grid-row-start: 5;
+    grid-column-start: 1;
+
+}
+
+.itapoa {
+
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+}
+
+.joao-pessoa {
+
+    grid-row-start: 3;
+    grid-column-start: 2;
+
+}
+
+.niteroi {
+
+    grid-row-start: 4;
+    grid-column-start: 2;
+
+}
+
+.patos-de-minas {
+
+    grid-row-start: 5;
+    grid-column-start: 2;
+
+}
+
+.rio-de-janeiro {
+
+    grid-row-start: 2;
+    grid-column-start: 3;
+
+}
+
+.salvador {
+
+    grid-row-start: 3;
+    grid-column-start: 3;
+
+}
+
+.santo-andre {
+
+    grid-row-start: 4;
+    grid-column-start: 3;
+
+}
+
+.santos {
+
+    grid-row-start: 5;
+    grid-column-start: 3;
+
+}
+
+.sao-caetano-do-sul {
+
+    grid-row-start: 2;
+    grid-column-start: 4;
+
+}
+
+.sao-paulo {
+
+    grid-row-start: 3;
+    grid-column-start: 4;
+
+}
+
+#botao-cidades {
+
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+    padding-right: 2%;
+   
+}
+
+#botao-cidades p {
+
+    color: #C4C4C4;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+#botao-cidades p:hover {
+
+    color: #592411;
+    transition: 0.5s;
+    
+}
+
+#pagamento {
+
+    margin-top: 6%;
+    color: black;
+    font-size: 18px;
+    border-top: 1px solid #C4C4C4;
+
+}
+
+#pagamento p:first-of-type {
+
+    padding-top: 4%;
+    
+}
+
+#pagamento p {
+
+    padding-left: 15%;
+    padding-top: 2%;
+
+}
+
+#pagamento img {
+
+    height: 35px;
+    width: 35px;
+    padding-left: 15px;
+
+}
+
+.icones-pagamento {
+
+    padding-left: 14.1%;
+    padding-top: 1%;
+    width: fit-content;
+
 }
 
 @media (max-width: 1280px) {
@@ -416,6 +691,7 @@ main {
         width: 290px;
         
     }
+
 }
 
 @media (max-width: 375px) {
@@ -424,10 +700,10 @@ main {
         
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
         height: 400px;
         width: 100vw;
-
+        box-shadow: 2px 1px 4px #592411;
+        
     }
 
     #logo>img {
@@ -466,7 +742,7 @@ main {
     
     }
 
-    #titulo-menu{
+    #titulo-menu {
 
         display: flex;
         justify-content: center;
@@ -482,10 +758,11 @@ main {
         flex-direction: column;
         width: 100vw;
         align-items: center;
+        padding-bottom: 3%;
            
     }
 
-    #menu-restaurantes button{
+    #menu-restaurantes button {
 
         width: fit-content; 
            
@@ -499,27 +776,59 @@ main {
         
     }
 
-    .restaurante-card span{
+    .restaurante-card span {
 
         width: 60%;
 
     }
 
-    .restaurante-card img{
+    .restaurante-card img {
 
         height: 50px;
         width: 50px;
+        
     }
 
     #botao-seleção {
 
-        padding-top: 8%;
+        padding-top: 10%;
+        padding-bottom: 8%;
         
     }
 
-    #botao-seleção button{
+    #botao-seleção button {
 
         width: 80%;
+        
+    }
+
+    #container-cidades {
+
+        display: none;
+
+    }
+
+    #explore-cidades {
+
+        display: none;
+
+    }
+
+    .tabela-cidades {
+
+        display: none;
+        
+    }
+
+    #botao-cidades p {
+
+        display: none;
+
+    }
+
+    .icones-pagamento {
+
+        padding-left: 11%;
         
     }
 
